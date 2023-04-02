@@ -18,6 +18,7 @@ jobs:
         run: |
           git config --local user.email "1002620235@qq.com"
           git config --local user.name "xiaocheng99"
+          git config --local user.password "19991019lcc"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
           git commit --allow-empty -m "a commit a day keeps your girlfriend away"
